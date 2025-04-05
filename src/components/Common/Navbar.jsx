@@ -30,11 +30,11 @@ const Navbar = () => {
           {/* Contact Numbers */}
           <div className="hidden md:flex space-x-8">
             <div>
-              <p className="text-lg font-bold text-blue-800">For Punjab</p>
+              <p className="text-lg  text-blue-800">For Punjab</p>
               <p className="text-lg font-bold text-ess-blue-900">1234567</p>
             </div>
             <div>
-              <p className="text-lg font-bold text-blue-800">Rest of India</p>
+              <p className="text-lg  text-blue-800">Rest of India</p>
               <p className="text-lg font-bold text-ess-blue-900">234342342</p>
             </div>
           </div>
