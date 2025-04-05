@@ -133,64 +133,65 @@ const Other = () => {
         <h1 className="text-4xl font-bold text-white">Other Countries</h1>
       </div>
 
-      {/* Countries Sections */}
-      {countries.map((country, index) => (
-        <div key={index} className="px-4 md:px-20 py-12 border-b border-gray-200">
-          <h2 className="text-3xl font-bold text-blue-800 text-center mb-6">
-            Study in {country.name}
-          </h2>
+      {/* Countries Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20 py-12">
+        {countries.map((country, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition hover:shadow-xl"
+          >
+            {/* Image */}
+            <img
+              src={country.map}
+              alt={`${country.name} Map`}
+              className="w-full h-48 object-cover"
+            />
 
-          <div className="bg-white rounded-xl shadow-md p-6 mb-8">
-            <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-              Why Choose {country.name}?
-            </h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
-              {country.benefits.map((point, i) => (
-                <li
-                  key={i}
-                  className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition"
-                >
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Card Content */}
+            <div className="p-6 flex flex-col justify-between flex-1">
+              <h2 className="text-2xl font-bold text-blue-800 mb-2 text-center">
+                Study in {country.name}
+              </h2>
 
-          <div className="text-center mb-8">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
-              🎯 Upcoming Intakes
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {["February", "July", "November"].map((month) => (
-                <div
-                  key={month}
-                  className="bg-blue-600 text-white px-5 py-2 rounded-full text-base font-medium shadow-md hover:bg-blue-700 transition"
-                >
-                  {month}
+              <p className="text-gray-600 mb-4 text-sm text-center">
+                {country.description}
+              </p>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                  Why Choose {country.name}?
+                </h3>
+                <ul className="list-disc list-inside text-sm text-gray-600 space-y-2">
+                  {country.benefits.slice(0, 4).map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                  {country.benefits.length > 4 && (
+                    <li className="text-blue-600">...and more</li>
+                  )}
+                </ul>
+              </div>
+
+              <div className="mb-2">
+                <h3 className="text-md font-semibold text-gray-700 mb-2">
+                  🎯 Upcoming Intakes
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {["February", "July", "November"].map((month) => (
+                    <div
+                      key={month}
+                      className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow"
+                    >
+                      {month}
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
-
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-gray-700 mb-4">
-              📍 Explore {country.name}
-            </h3>
-            <div className="rounded-xl overflow-hidden shadow-lg inline-block">
-              <img
-                src={country.map}
-                alt={`${country.name} Map`}
-                className="w-full max-w-xl object-cover"
-              />
-            </div>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              {country.description}
-            </p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
 
-export default Other;
+export default Other ;

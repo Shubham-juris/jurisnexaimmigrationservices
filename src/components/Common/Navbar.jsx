@@ -1,78 +1,51 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube, FaBars, FaTimes } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+  FaBars,
+  FaTimes,
+} from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
-import LogoImg from "../../assets/Logo/LOGO.jpg";
+import LogoImg from '../../assets/Logo/LOGO.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-gray-100 py-2 text-sm">
-        <div className="container mx-auto flex flex-wrap items-center justify-between px-4">
-          <div className="flex items-center">
-            <a href="mailto:info@essglobal.com" className="flex items-center text-gray-700">
-              <FiMail className="mr-2" />
-              Jurisnexa.com
-            </a>
-            <span className="mx-4 hidden text-gray-500 md:block">|</span>
-            <p className="hidden text-gray-700 md:block">Mon-Sat - 9.30AM to 5.30PM</p>
-          </div>
-          <div className="flex space-x-3">
-            <a href="https://www.facebook.com/" className="text-gray-700 hover:text-blue-600">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.instagram.com/" className="text-gray-700 hover:text-pink-600">
-              <FaInstagram />
-            </a>
-            <a href="https://in.linkedin.com/" className="text-gray-700 hover:text-blue-700">
-              <FaLinkedinIn />
-            </a>
-            <a href="https://twitter.com/" className="text-gray-700 hover:text-blue-400">
-              <FaTwitter />
-            </a>
-            <a href="https://www.youtube.com/" className="text-gray-700 hover:text-red-600">
-              <FaYoutube />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
-      <div className="bg-white py-4 shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
+      <div className="bg-white shadow-md">
+        <div className="container mx-auto flex items-center justify-between px-4 py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={LogoImg} alt="Logo" className= "h-12" />
+            <img src={LogoImg} alt="Logo" className="h-12" />
           </Link>
 
-          {/* Corporate Office */}
+          {/* Office Info */}
           <div className="hidden md:block">
-            <div className="flex items-center">
-              <div>
-                <p className="text-sm font-bold text-ess-blue-900">OFFICE ADDRESS:</p>
-                <p className="text-xs text-gray-600">SCO 443-444, Second Floor, Sector 35-C, Chandigarh - 160022</p>
-              </div>
+            <div>
+              <p className="text-lg font-bold text-blue-800">OFFICE ADDRESS:</p>
+              <p className="text-xs text-gray-600">SCO 443-444, Second Floor, Sector 35-C, Chandigarh - 160022</p>
             </div>
           </div>
 
-          {/* Phone Numbers */}
-          <div className="hidden md:block">
-            <div className="flex space-x-4">
-              <div>
-                <p className="text-xs text-gray-600">For Punjab</p>
-                <p className="text-lg font-bold text-ess-blue-900">1234567</p>
-              </div>
-              <div>
-                <p className="text-xs text-gray-600">Rest of India</p>
-                <p className="text-lg font-bold text-ess-blue-900">234342342</p>
-              </div>
+          {/* Contact Numbers */}
+          <div className="hidden md:flex space-x-8">
+            <div>
+              <p className="text-lg font-bold text-blue-800">For Punjab</p>
+              <p className="text-lg font-bold text-ess-blue-900">1234567</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-blue-800">Rest of India</p>
+              <p className="text-lg font-bold text-ess-blue-900">234342342</p>
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Icon */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -84,61 +57,75 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Desktop Menu Items */}
-      <div className="hidden md:flex space-x-4 bg-ess-blue-900 text-black">
-        <Link to="/" className="block px-4 py-3 hover:bg-ess-blue-800">Home</Link>
-        <Link to="/about" className="block px-4 py-3 hover:bg-ess-blue-800">About</Link>
-        <Link to="/australia" className="block px-4 py-3 hover:bg-ess-blue-800">Australia</Link>
-        <Link to="/canada" className="block px-4 py-3 hover:bg-ess-blue-800">Canada</Link>
-        <Link to="/united-kingdom" className="block px-4 py-3 hover:bg-ess-blue-800">United Kingdom</Link>
-        <Link to="/usa" className="block px-4 py-3 hover:bg-ess-blue-800">USA</Link>
-        <Link to="/scholarships" className="block px-4 py-3 hover:bg-ess-blue-800">Scholarships</Link>
-        <Link to="/media" className="block px-4 py-3 hover:bg-ess-blue-800">Media Coverage</Link>
-        <Link to="/contact" className="block px-4 py-3 hover:bg-ess-blue-800">Contact Us</Link>
-        <Link to="/other" className="block px-4 py-3 hover:bg-ess-blue-800">Others</Link>
-      </div>
+      {/* Desktop Nav Links */}
+<div className="hidden md:flex justify-center space-x-4 text-black text-sm font-medium tracking-wide">
+  {[
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/australia', label: 'Australia' },
+    { to: '/canada', label: 'Canada' },
+    { to: '/united-kingdom', label: 'United Kingdom' },
+    { to: '/usa', label: 'USA' },
+    { to: '/scholarships', label: 'Scholarships' },
+    { to: '/media', label: 'Media Coverage' },
+    { to: '/contact', label: 'Contact Us' },
+    { to: '/other', label: 'Others' },
+  ].map((item) => (
+    <Link
+      key={item.to}
+      to={item.to}
+      className="px-4 py-2 border border-transparent rounded-md hover:border-blue-600 hover:text-white hover:bg-gradient-to-r from-blue-500 to-blue-700 transition-all duration-300"
+    >
+      {item.label}
+    </Link>
+  ))}
+</div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden">
-          <ul className="flex flex-col border-t border-ess-blue-800">
+        <div className="md:hidden bg-white shadow-md z-50">
+          <ul className="flex flex-col divide-y divide-ess-blue-800">
+            {[
+              { to: '/', label: 'Home' },
+              { to: '/about', label: 'About' },
+              { to: '/australia', label: 'Australia' },
+              { to: '/canada', label: 'Canada' },
+              { to: '/united-kingdom', label: 'United Kingdom' },
+              { to: '/usa', label: 'USA' },
+              { to: '/scholarships', label: 'Scholarships' },
+              { to: '/media', label: 'Media Coverage' },
+              { to: '/contact', label: 'Contact Us' },
+            ].map((item) => (
+              <li key={item.to}>
+                <Link
+                  to={item.to}
+                  className="block px-4 py-3 text-gray-700 hover:bg-ess-blue-800 hover:text-white transition"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            {/* Others Dropdown */}
             <li>
-              <Link to="/" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Home</Link>
-            </li>
-            <li>
-              <Link to="/about" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">About</Link>
-            </li>
-            <li>
-              <Link to="/australia" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Australia</Link>
-            </li>
-            <li>
-              <Link to="/canada" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Canada</Link>
-            </li>
-            <li>
-              <Link to="/united-kingdom" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">United Kingdom</Link>
-            </li>
-            <li>
-              <Link to="/usa" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">USA</Link>
-            </li>
-            <li className="group relative">
-              <Link to="#" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Others</Link>
-              <ul className="flex flex-col border-t border-ess-blue-800">
+              <div className="block px-4 py-3 text-gray-700 bg-gray-50 font-semibold">Others</div>
+              <ul className="ml-4">
                 <li>
-                  <Link to="/france" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">France</Link>
+                  <Link
+                    to="/france"
+                    className="block px-4 py-2 text-gray-600 hover:text-ess-blue-900 transition"
+                  >
+                    France
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/germany" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Germany</Link>
+                  <Link
+                    to="/germany"
+                    className="block px-4 py-2 text-gray-600 hover:text-ess-blue-900 transition"
+                  >
+                    Germany
+                  </Link>
                 </li>
               </ul>
-            </li>
-            <li>
-              <Link to="/scholarships" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Scholarships</Link>
-            </li>
-            <li>
-              <Link to="/media" className="block border-b border-ess-blue-800 px-4 py-3 hover:bg-ess-blue-800">Media Coverage</Link>
-            </li>
-            <li>
-              <Link to="/contact" className="block px-4 py-3 hover:bg-ess-blue-800">Contact Us</Link>
             </li>
           </ul>
         </div>
