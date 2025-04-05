@@ -95,17 +95,7 @@ const Navbar = () => {
         <Link to="/scholarships" className="block px-4 py-3 hover:bg-ess-blue-800">Scholarships</Link>
         <Link to="/media" className="block px-4 py-3 hover:bg-ess-blue-800">Media Coverage</Link>
         <Link to="/contact" className="block px-4 py-3 hover:bg-ess-blue-800">Contact Us</Link>
-        <div className="group relative">
-          <Link to="#" className="block px-4 py-3 hover:bg-ess-blue-800">Others</Link>
-          <ul className="absolute left-0 hidden w-56 bg-white text-gray-800 shadow-lg group-hover:block">
-            <li>
-              <Link to="/france" className="block px-4 py-2 hover:bg-gray-100">France</Link>
-            </li>
-            <li>
-              <Link to="/germany" className="block px-4 py-2 hover:bg-gray-100">Germany</Link>
-            </li>
-          </ul>
-        </div>
+        <Link to="/other" className="block px-4 py-3 hover:bg-ess-blue-800">Others</Link>
       </div>
 
       {/* Mobile Menu */}

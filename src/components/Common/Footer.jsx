@@ -55,42 +55,27 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Study */}
-          <div>
-            <h4 className="mb-4 text-lg font-semibold">Study</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link to="/study/australia" className="hover:text-ess-blue-300">Australia</Link>
-              </li>
-              <li>
-                <Link to="/study/canada" className="hover:text-ess-blue-300">Canada</Link>
-              </li>
-              <li>
-                <Link to="/study/usa" className="hover:text-ess-blue-300">USA</Link>
-              </li>
-              <li>
-                <Link to="/study/uk" className="hover:text-ess-blue-300">UK</Link>
-              </li>
-            </ul>
-          </div>
+<div>
+  <h4 className="mb-4 text-lg font-semibold">Study</h4>
+  <ul className="space-y-2 text-sm text-gray-400">
+    <li className="hover:text-ess-blue-300">Australia</li>
+    <li className="hover:text-ess-blue-300">Canada</li>
+    <li className="hover:text-ess-blue-300">USA</li>
+    <li className="hover:text-ess-blue-300">UK</li>
+  </ul>
+</div>
 
-          {/* Column 3: Useful Links */}
-          <div>
-            <h4 className="mb-4 text-lg font-semibold">Useful Links</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link to="/citizenship/cyprus" className="hover:text-ess-blue-300">Cyprus</Link>
-              </li>
-              <li>
-                <Link to="/citizenship/cyprus-eu" className="hover:text-ess-blue-300">Cyprus EU</Link>
-              </li>
-              <li>
-                <Link to="/citizenship/greece" className="hover:text-ess-blue-300">Greece</Link>
-              </li>
-              <li>
-                <Link to="/careers" className="hover:text-ess-blue-300">Current Openings</Link>
-              </li>
-            </ul>
-          </div>
+{/* Column 3: Useful Links */}
+<div>
+  <h4 className="mb-4 text-lg font-semibold">Useful Links</h4>
+  <ul className="space-y-2 text-sm text-gray-400">
+    <li className="hover:text-ess-blue-300">Cyprus</li>
+    <li className="hover:text-ess-blue-300">Cyprus EU</li>
+    <li className="hover:text-ess-blue-300">Greece</li>
+    <li className="hover:text-ess-blue-300">Current Openings</li>
+  </ul>
+</div>
+
 
           {/* Column 4: Venture by OPTAS */}
           <div className="flex items-center justify-center md:justify-end">
