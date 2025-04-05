@@ -1,15 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-  FaYoutube,
   FaBars,
   FaTimes,
 } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
 import LogoImg from '../../assets/Logo/LOGO.jpg';
 
 const Navbar = () => {
