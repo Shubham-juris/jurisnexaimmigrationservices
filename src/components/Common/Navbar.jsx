@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div>
               <p className="text-lg font-bold text-blue-800">OFFICE ADDRESS:</p>
-              <p className="text-xs text-gray-600">SCO 443-444, Second Floor, Sector 35-C, Chandigarh - 160022</p>
+              <p className="text-xs text-gray-600">SCO 123-456, Second Floor, Sector 00-C, Kharar - 160022</p>
             </div>
           </div>
 
@@ -31,11 +31,11 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             <div>
               <p className="text-lg  text-blue-800">For Punjab</p>
-              <p className="text-lg font-bold text-ess-blue-900">1234567</p>
+              <p className="text-lg font-bold text-ess-blue-900">123456789</p>
             </div>
             <div>
               <p className="text-lg  text-blue-800">Rest of India</p>
-              <p className="text-lg font-bold text-ess-blue-900">234342342</p>
+              <p className="text-lg font-bold text-ess-blue-900">123456789</p>
             </div>
           </div>
 
