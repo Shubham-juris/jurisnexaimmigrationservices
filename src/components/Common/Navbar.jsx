@@ -31,11 +31,11 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             <div>
               <p className="text-lg  text-blue-800">For Punjab</p>
-              <p className="text-lg font-bold text-ess-blue-900">123456789</p>
+              <p className="text-lg  text-ess-blue-900">123456789</p>
             </div>
             <div>
               <p className="text-lg  text-blue-800">Rest of India</p>
-              <p className="text-lg font-bold text-ess-blue-900">123456789</p>
+              <p className="text-lg  text-ess-blue-900">123456789</p>
             </div>
           </div>
 
