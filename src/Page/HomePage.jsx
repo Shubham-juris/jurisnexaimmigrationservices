@@ -1,3 +1,4 @@
+import CursorIcon from "../components/Common/CursorIcon";
 import Footer from "../components/Common/Footer";
 import Navbar from "../components/Common/Navbar";
 import About from "../components/Home/About";
@@ -17,6 +18,7 @@ const HomePage = () => {
       <ContactUs />
       <Media />
       <Footer />
+      <CursorIcon/>
     </div>
   );
 };
