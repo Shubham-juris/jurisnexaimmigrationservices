@@ -22,11 +22,11 @@ const Footer = () => {
         className="flex items-center text-gray-700 hover:text-blue-800 transition"
       >
         <FiMail className="mr-2" />
-        Jurisnexa.com
+        jurisnexaimmigrationservies@gmail.com
       </a>
       <span className="hidden md:inline-block text-gray-500">|</span>
       <p className="text-gray-700">
-        Mon-Sat - 9.30AM to 5.30PM
+        Mon-Sat - 10.00AM to 5.00PM
       </p>
     </address>
 

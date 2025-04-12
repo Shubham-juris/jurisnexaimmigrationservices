@@ -23,19 +23,19 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div>
               <p className="text-lg font-bold text-blue-800">OFFICE ADDRESS:</p>
-              <p className="text-xs text-gray-600">SCO 123-456, Second Floor, Sector 00-C, Kharar - 160022</p>
+              <p className="text-xs text-gray-600">SCO 27, New Sunny Enclave, Sector-125,Mohali-140301</p>
             </div>
           </div>
 
           {/* Contact Numbers */}
           <div className="hidden md:flex space-x-8">
-            <div>
+            {/* <div>
               <p className="text-lg  text-blue-800">For Punjab</p>
               <p className="text-lg  text-ess-blue-900">123456789</p>
-            </div>
+            </div> */}
             <div>
-              <p className="text-lg  text-blue-800">Rest of India</p>
-              <p className="text-lg  text-ess-blue-900">123456789</p>
+              <p className="text-lg  text-blue-800">Contact Us</p>
+              <p className="text-lg  text-ess-blue-900">+91 7087107690</p>
             </div>
           </div>
 
