@@ -35,20 +35,16 @@ const ContactUs = () => {
 
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center" 
+      className="relative bg-cover bg-center bg-no-repeat h-[800px] flex items-center justify-center" 
       style={{ backgroundImage: `url(${Img})` }} 
-    >
+    >     
 
-      
-
-      {/* Form Container */}
       <div className="relative bg-white shadow-lg rounded-xl p-8 md:p-12 max-w-2xl w-full">
         <h2 className="text-3xl font-bold text-gray-900 text-center">Book Appointment</h2>
         <p className="text-gray-600 text-center mt-2 mb-6">
           Share your details and our team will contact you shortly.
         </p>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input

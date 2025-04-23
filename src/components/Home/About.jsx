@@ -5,13 +5,11 @@ const About = () => {
   return (
     <div className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
-        {/* Colorful Heading */}
         <h2 className="mb-12 text-center text-4xl font-extrabold text-black">
           About Juris Nexa Immigration
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 items-stretch">
-          {/* Left Column - Image */}
           <div className="flex items-center justify-center">
             <img
               src={Img}
@@ -20,7 +18,6 @@ const About = () => {
             />
           </div>
 
-          {/* Right Column - Content */}
           <div className="flex flex-col justify-between">
             <div>
               <h3 className="mb-4 text-2xl font-bold text-ess-blue-900">

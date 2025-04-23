@@ -33,7 +33,6 @@ const Hero = () => {
       style={{ backgroundImage: `url(${slides[currentSlide].bgImage})` }}
     >
 
-      {/* Content */}
       <div className="relative z-20 flex flex-col justify-center items-center h-full text-center px-6 ">
         <motion.h1
           className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-10 drop-shadow-xl " N               
