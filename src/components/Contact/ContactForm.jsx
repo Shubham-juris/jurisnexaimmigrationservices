@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Phone, Mail, Send, ChevronDown } from "lucide-react";
-import studyImg from "../../assets/HeroImg/studyimg.jpg";
+import studyImg from "../../assets/HeroImg/Studyimage.jpg";
 
 export default function ContactForm() {
   const [formData, setState] = useState({
