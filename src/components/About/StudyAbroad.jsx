@@ -1,5 +1,5 @@
 
-import studyImg from "../../assets/HeroImg/studyimg.jpg";
+import studyImg from "../../assets/HeroImg/StudyImg.jpg";
 
 export default function StudyAbroad() {
   return (
