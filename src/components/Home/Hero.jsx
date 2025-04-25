@@ -32,10 +32,11 @@ const Hero = () => {
       className="relative h-[600px] md:h-[700px] w-full bg-cover bg-center transition-all duration-500"
       style={{ backgroundImage: `url(${slides[currentSlide].bgImage})` }}
     >
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
 
-      <div className="relative z-20 flex flex-col justify-center items-center h-full text-center px-6 ">
+      <div className="relative z-20 flex flex-col justify-center items-center h-full text-center px-6">
         <motion.h1
-          className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-10 drop-shadow-xl " N               
+          className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-10 drop-shadow-xl"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -44,7 +45,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-white text-lg md:text-xl max-w-2xl mb-8 drop-shadow-lg "
+          className="text-white text-lg md:text-xl max-w-2xl mb-8 drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}

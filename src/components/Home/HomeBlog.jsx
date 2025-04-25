@@ -71,25 +71,25 @@ export default function HomeBlog() {
   ];
 
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-white py-12">
+      <div className=" container w-100% justify-center mx-auto ">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">Our Blogs</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.map((post) => (
-            <div key={post.id} className="bg-white rounded shadow overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-0 md:px-4">
+          {blogPosts.slice(0, 6).map((post) => (
+            <div key={post.id} className="bg-white border border-gray-200 rounded overflow-hidden hover:shadow-md transition-shadow">
               <img 
                 src={post.image} 
                 alt={post.title}
-                className="w-full h-48 object-cover "
+                className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <div className="text-blue-600 text-sm font-medium mb-2">{post.category}</div>
-                <h3 className="text-gray-900 font-semibold text-lg hover:text-blue-500 mb-2">{post.title}</h3>
-                <p className="text-gray-600 text-sm mb-3">{post.snippet}</p>
-                <a href={post.readMoreLink} className="text-blue-600 text-sm font-medium">Read More</a>
+                <div className="text-blue-600 text-xs font-medium mb-2">{post.category}</div>
+                <h3 className="text-gray-900 font-semibold text-sm mb-2">{post.title}</h3>
+                <p className="text-gray-600 text-xs mb-3">{post.snippet}</p>
+                <a href={post.readMoreLink} className="text-blue-600 text-xs font-medium">Read More</a>
                 
-                <div className="border-t border-gray-200 mt-4 pt-4 flex items-center justify-between">
+                <div className="mt-3 pt-3 flex items-center justify-between">
                   <div className="flex items-center">
                     <span className="text-xs text-gray-700">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 inline mr-1">
@@ -110,8 +110,8 @@ export default function HomeBlog() {
           ))}
         </div>
         
-        <div className="flex justify-center mt-10">
-          <button className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded-md text-sm font-medium transition-colors">
+        <div className="flex justify-center mt-8">
+          <button className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded text-sm font-medium transition-colors">
             More Posts
           </button>
         </div>

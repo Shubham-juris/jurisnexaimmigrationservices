@@ -4,7 +4,7 @@ import Icon from "../../assets/Logo/Icon.gif";
 const CursorIcon = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [adjustedPosition, setAdjustedPosition] = useState({ x: 0, y: 0 });
-  const [direction, setDirection] = useState("right"); // default facing right
+  const [direction, setDirection] = useState("right"); 
 
   const prevPos = useRef({ x: 0, y: 0 });
   const iconSize = 72;
@@ -16,8 +16,6 @@ const CursorIcon = () => {
       const y = e.clientY;
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
-
-      // --- Direction calculation ---
       const dx = x - prevPos.current.x;
       const dy = y - prevPos.current.y;
 
@@ -26,8 +24,6 @@ const CursorIcon = () => {
       } else {
         setDirection(dy > 0 ? "down" : "up");
       }
-
-      // --- Position adjustment ---
       let adjustedX = x + offset;
       let adjustedY = y + offset;
 
@@ -48,8 +44,6 @@ const CursorIcon = () => {
       window.removeEventListener("mousemove", moveHandler);
     };
   }, []);
-
-  // --- Rotation or flip logic ---
   let transform = "";
   if (direction === "left") transform = "scaleX(-1)";
   if (direction === "up") transform = "rotate(-90deg)";

@@ -148,9 +148,9 @@ export default function ClientReviews() {
       <div className="absolute top-0 right-0 w-64 h-4 bg-gradient-to-r from-white to-orange-300 rounded-bl-3xl transform translate-x-8 -translate-y-4 opacity-40"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-r from-orange-300 to-white rounded-tr-3xl transform -translate-x-4 translate-y-4 opacity-40"></div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="container w-100% mx-auto relative z-10">
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-2">
+          <div className="flex items-center justify-center py-4 mb-2">
             <span className="text-gray-500 mr-2 text-lg">Rated 4.9 Stars</span>
             <div className="flex">
               {[1, 2, 3, 4, 5].map((star) => (
@@ -163,16 +163,9 @@ export default function ClientReviews() {
               ))}
             </div>
           </div>
-          <h2 className="text-4xl font-bold text-gray-800 mb-8">Cleints Reviews</h2>
+          <h2 className="text-4xl font-bold text-gray-800 py-4 mb-8">Cleints Reviews</h2>
           
-          <button className="bg-white rounded-lg px-6 py-3 flex items-center justify-center mx-auto border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-            <span className="mr-2">View all reviews</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 16 16 12 12 8"></polyline>
-              <line x1="8" y1="12" x2="16" y2="12"></line>
-            </svg>
-          </button>
+
         </div>
 
         <div className="relative mt-12">

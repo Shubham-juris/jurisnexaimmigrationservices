@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Img from "../assets/HeroImg/BgImg.jpg"; // Adjust the path as necessary
-
+import Img from "../assets/About/aboutcompany.jpg";
+import StudyAbroad from "../components/About/StudyAbroad";
 
 const AboutUsPage = () => {
   return (
@@ -11,16 +11,14 @@ const AboutUsPage = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Image Section */}
           <div className="flex justify-center">
             <img
               src={Img}
               alt="Juris Nexa Immigration Office"
-              className="rounded-2xl shadow-2xl max-w-full w-[90%] md:w-[80%] lg:w-[100%] object-cover"
+              className="rounded-xl  shadow-2xl max-w-full w-[90%] md:w-[80%] lg:w-[100%] object-cover"
             />
           </div>
 
-          {/* Text Section */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
               🌍 Redefining Excellence in Education and Immigration for Over a Decade
@@ -31,7 +29,6 @@ const AboutUsPage = () => {
               Our approach is built on transparency, honesty, and tailored support — guiding every student and professional through every stage of the journey.
             </p>
 
-            {/* Mission */}
             <div className="mb-8">
               <h4 className="flex items-center text-xl font-semibold text-gray-800 mb-2">
                 <img
@@ -46,7 +43,6 @@ const AboutUsPage = () => {
               </p>
             </div>
 
-            {/* Vision */}
             <div className="mb-8">
               <h4 className="flex items-center text-xl font-semibold text-gray-800 mb-2">
                 <img
@@ -63,13 +59,15 @@ const AboutUsPage = () => {
 
             <Link
               to="/about-us"
-              className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-full font-medium text-lg hover:bg-blue-700 transition-all duration-200"
+              className="inline-block mt-4 bg-blue-600 text-white mb-14 px-6 py-3 rounded-full font-medium text-lg hover:bg-blue-700 transition-all duration-200"
             >
               Learn More About Us
             </Link>
           </div>
         </div>
       </div>
+   
+    <StudyAbroad />
     </div>
   );
 };

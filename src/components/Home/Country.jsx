@@ -117,7 +117,7 @@ export default function Country() {
 
   return (
     <div className="w-full bg-white py-12">
-      <div className="max-w-7xl mx-auto">
+      <div className=" container w-100% mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-gray-900">Our Locations</h2>
           <p className="text-gray-600 mt-2 mx-auto max-w-3xl">

@@ -8,38 +8,25 @@ import LogoImg from '../../assets/Logo/LOGO.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <>
-      {/* Main Navbar */}
       <div className="bg-white shadow-md">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          {/* Logo */}
           <Link to="/" className="flex items-center">
             <img src={LogoImg} alt="Logo" className="h-12" />
           </Link>
-
-          {/* Office Info */}
           <div className="hidden md:block">
             <div>
               <p className="text-lg font-bold text-blue-800">OFFICE ADDRESS:</p>
               <p className="text-xs text-gray-600">SCO 27, New Sunny Enclave, Sector-125,Mohali-140301</p>
             </div>
           </div>
-
-          {/* Contact Numbers */}
           <div className="hidden md:flex space-x-8">
-            {/* <div>
-              <p className="text-lg  text-blue-800">For Punjab</p>
-              <p className="text-lg  text-ess-blue-900">123456789</p>
-            </div> */}
             <div>
-              <p className="text-lg  text-blue-800">Contact Us</p>
+              <p className="text-lg font-bold text-blue-800">Contact Us</p>
               <p className="text-lg  text-ess-blue-900">+91 7087107690</p>
             </div>
           </div>
-
-          {/* Mobile Menu Icon */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,7 +38,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Desktop Nav Links */}
 <div className="hidden md:flex justify-center space-x-4 text-black text-sm font-medium tracking-wide">
   {[
     { to: '/', label: 'Home' },
@@ -74,8 +60,6 @@ const Navbar = () => {
     </Link>
   ))}
 </div>
-
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md z-50">
           <ul className="flex flex-col divide-y divide-ess-blue-800">
@@ -99,7 +83,6 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            {/* Others Dropdown */}
             <li>
               <div className="block px-4 py-3 text-gray-700 bg-gray-50 font-semibold">Others</div>
               <ul className="ml-4">
