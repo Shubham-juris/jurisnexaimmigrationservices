@@ -1,6 +1,5 @@
 
-import studyImg from "../../assets/HeroImg/StudyImg.jpg";
-
+import studyImg from "../../assets/HeroImg/Studyimage.jpg";
 export default function StudyAbroad() {
   return (
     <div className="relative w-full bg-white overflow-hidden">

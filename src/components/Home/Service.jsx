@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Study from "../../assets/HeroImg/StudyImg.jpg";
+import Study from "../../assets/HeroImg/Studyimage.jpg";
 import Settle from "../../assets/HeroImg/Settle.jpg";
 
 const cardVariants = {
