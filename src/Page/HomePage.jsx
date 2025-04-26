@@ -5,6 +5,7 @@ import Media from "../components/Home/Media";
 import Services from "../components/Home/Service";
 import Country from "../components/Home/Country";
 import ClientReviews from "../components/Home/ClientReviews";
+import VisaConsultantTeam from "../components/Home/ConsultantCard";
 
 
 export default function HomePage ()  {
@@ -15,6 +16,7 @@ export default function HomePage ()  {
       <About />
       <HomeBlog />
       <Country /> 
+      <VisaConsultantTeam />
       <ClientReviews />
       <Media />
     </>

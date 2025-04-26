@@ -1,0 +1,100 @@
+import React from "react";
+import BgImg from "../assets/HeroImg/Background.png";
+import MapImg from "../assets/HeroImg/map.png"; 
+import ReasonsToChooseIndia from "../components/India/ChooseIndia";
+
+export default function IndiaPage() {
+  return (
+    <div className="w-full min-h-screen bg-gray-100">
+      {/* Hero Section */}
+      <div
+        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${BgImg})` }}
+      >
+        <h1 className="text-5xl font-bold text-white">India</h1>
+      </div> 
+
+      {/* Why Choose India */}
+      <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
+        <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
+          <h2 className="text-3xl font-extrabold text-gray-800 mb-8 text-center">
+            Why Choose India?
+          </h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🎓 India is home to prestigious institutions like IITs, IIMs, and AIIMS.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              📈 Rapidly growing economy with emerging global opportunities.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              💰 Affordable education and living costs compared to many countries.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🎁 Wide range of scholarships available for international students.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🏫 Strong emphasis on STEM (Science, Technology, Engineering, Mathematics) fields.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🏦 Booming tech industry with companies like Infosys, TCS, Wipro.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🏙️ Rich culture, heritage, and diverse lifestyles.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🕒 Opportunities for internships and part-time jobs during study.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              📄 Strong alumni networks and global career support.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🧑‍💼 Training and placement cells in universities to assist in employment.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🌎 Experience India's vibrant festivals, cuisine, and multicultural environment.
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+              🏆 Opportunities in startups, research, innovation, and entrepreneurship.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Upcoming Intakes */}
+      <div className="mt-12">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">🎯 Upcoming Intakes</h3>
+        <div className="flex flex-wrap justify-center gap-6">
+          {["January", "July", "September"].map((month) => (
+            <div
+              key={month}
+              className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-blue-700 transition transform hover:scale-105"
+            >
+              {month}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Explore India Section */}
+      <div className="w-full py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">📍 Explore India</h3>
+          <div className="rounded-2xl overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300 border border-gray-200">
+            <img
+              src={MapImg}
+              alt="India Map"
+              className="w-full object-cover"
+            />
+          </div>
+          <p className="mt-4 text-gray-600 text-base">
+            India boasts educational hubs like Delhi, Mumbai, Bangalore, Hyderabad, and Chennai.
+          </p>
+        </div>
+      </div>
+
+      {/* Reasons Section */}
+      <ReasonsToChooseIndia />
+    </div>
+  );
+}

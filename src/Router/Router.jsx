@@ -2,16 +2,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from '../components/Common/Navbar'; 
 import Footer from '../components/Common/Footer';
 import HomePage from '../Page/HomePage';
-import AustraliaPage from '../Page/AustraliaPage';
+
 import CanadaPage from '../Page/CanadaPage';
 import UkPage from '../Page/UkPage';
 import CursorIcon from '../components/Common/CursorIcon';
 import AboutUsPage from '../Page/AboutUsPage';
-import USAPage from '../Page/UsaPage';
 import Other from '../Page/Other';
 import Scholarship from '../Page/Scholarship';
 import ContactUs from '../components/Home/ContactUs';
 import ContactUsPage from '../Page/ContactUsPage';
+import DubaiPage from '../Page/DubaiPage';
+import IndiaPage from '../Page/IndiaPage';
+import ServicesPage from '../Page/ServicesPage';
 
 
 
@@ -23,13 +25,14 @@ const RouterComponent = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} /> 
-        <Route path="/australia" element={<AustraliaPage/>} />
+        <Route path="/dubai" element={<DubaiPage/>} />
         <Route path="/canada" element={<CanadaPage />} />
         <Route path="/united-kingdom" element={<UkPage/>}/>
-        <Route path="/usa" element={<USAPage />} />
+        <Route path="/india" element={<IndiaPage />} />
         <Route path="/other" element={<Other />} />
         <Route path="/scholarships" element={<Scholarship />} />
-        <Route path="/contact" element={<ContactUsPage />} />
+        <Route path="/contact" element={<ContactUsPage />} /> 
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
       <ContactUs />
       <Footer />

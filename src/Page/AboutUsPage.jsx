@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Img from "../assets/About/aboutcompany.jpg";
 import StudyAbroad from "../components/About/StudyAbroad";
+import WorkingProcess from "../components/About/WorkingProcess";
 
 const AboutUsPage = () => {
   return (
@@ -68,6 +69,7 @@ const AboutUsPage = () => {
       </div>
    
     <StudyAbroad />
+    <WorkingProcess />
     </div>
   );
 };

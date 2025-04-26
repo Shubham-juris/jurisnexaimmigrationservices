@@ -12,10 +12,8 @@ import Img from '../../assets/Logo/LOGO.jpg';
 const Footer = () => {
   return (
     <footer className="text-sm text-gray-400">
-      {/* Top Contact Bar */}
       <div className="bg-gray-100 w-full">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-2 space-y-2 md:space-y-0">
-    {/* Left side - Email and Timing */}
     <address className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4 not-italic text-center md:text-left">
       <a
         href="mailto:info@essglobal.com"
@@ -30,7 +28,6 @@ const Footer = () => {
       </p>
     </address>
 
-    {/* Right side - Social Icons */}
     <div className="flex justify-center md:justify-end space-x-4">
       <a
         href="https://www.facebook.com/"
@@ -82,10 +79,8 @@ const Footer = () => {
 </div>
 
 
-      {/* Main Footer */}
       <div className="bg-gray-900 py-12 text-white">
         <div className="container mx-auto grid gap-10 px-4 md:grid-cols-4">
-          {/* Logo & About */}
           <div>
             <Link to="/">
               <img src={Img} alt="JurisNexa Logo" className="mb-4 h-16" />
@@ -115,11 +110,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Study Links */}
           <div>
             <h4 className="mb-4 text-lg font-semibold">Study</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              {['Australia', 'Canada', 'USA', 'UK'].map((country, idx) => (
+              {['Dubai', 'Canada', 'India', 'UK'].map((country, idx) => (
                 <li key={idx} className="hover:text-blue-300 cursor-pointer">
                   {country}
                 </li>
@@ -127,7 +121,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Useful Links */}
           <div>
             <h4 className="mb-4 text-lg font-semibold">Useful Links</h4>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -139,7 +132,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Partner/Venture Logo */}
           <div className="flex items-center justify-center md:justify-end">
             <img
               src={Img}
@@ -150,7 +142,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="bg-blue-900 py-3 text-center text-white">
         <div className="container mx-auto px-4">
           © 2025 JurisNexa Immigration Private Limited. All rights reserved.

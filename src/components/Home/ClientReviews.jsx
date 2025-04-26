@@ -189,7 +189,7 @@ export default function ClientReviews() {
             {visibleReviews.map((review) => (
               <div 
                 key={review.id}
-                className="bg-white p-12 rounded-lg shadow-lg flex flex-col h-[400px] transform transition-all duration-300 hover:-translate-y-2"
+                className="bg-white p-12 rounded-[25px] shadow-lg flex flex-col h-[400px] transform transition-all duration-300 hover:-translate-y-2"
               >
                 {review.googleIcon && <GoogleLogo />}
                 

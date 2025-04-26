@@ -100,9 +100,9 @@ const ContactUs = () => {
             >
               <option value="">--Choose Country--</option>
               <option value="Canada">Canada</option>
-              <option value="USA">USA</option>
+              <option value="India">India</option>
               <option value="United Kingdom">United Kingdom</option>
-              <option value="Australia">Australia</option>
+              <option value="Dubai">Dubai</option>
               <option value="Others">Others</option>
             </select>
           </div>

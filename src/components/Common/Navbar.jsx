@@ -42,12 +42,12 @@ const Navbar = () => {
   {[
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
-    { to: '/australia', label: 'Australia' },
+    { to: '/dubai', label: 'Dubai' },
     { to: '/canada', label: 'Canada' },
     { to: '/united-kingdom', label: 'United Kingdom' },
-    { to: '/usa', label: 'USA' },
+    { to: '/india', label: 'India' },
     { to: '/scholarships', label: 'Scholarships' },
-    { to: '/media', label: 'Media Coverage' },
+    { to: '/services', label: 'Services' },
     { to: '/contact', label: 'Contact Us' },
     { to: '/other', label: 'Others' },
   ].map((item) => (
@@ -66,12 +66,12 @@ const Navbar = () => {
             {[
               { to: '/', label: 'Home' },
               { to: '/about', label: 'About' },
-              { to: '/australia', label: 'Australia' },
+              { to: '/dubai', label: 'Dubai' },
               { to: '/canada', label: 'Canada' },
               { to: '/united-kingdom', label: 'United Kingdom' },
-              { to: '/usa', label: 'USA' },
+              { to: '/india', label: 'India' },
               { to: '/scholarships', label: 'Scholarships' },
-              { to: '/media', label: 'Media Coverage' },
+              { to: '/services', label: 'Services' },
               { to: '/contact', label: 'Contact Us' },
             ].map((item) => (
               <li key={item.to}>

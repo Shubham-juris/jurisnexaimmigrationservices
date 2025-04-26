@@ -3,7 +3,7 @@ import { Phone, Mail, Send, ChevronDown } from "lucide-react";
 import studyImg from "../../assets/HeroImg/Studyimage.jpg";
 
 export default function ContactForm() {
-  const [formData, setState] = useState({
+  const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
@@ -16,19 +16,18 @@ export default function ContactForm() {
 
   const countries = [
     { name: "India (भारत)", code: "+91", flag: "in" },
-    { name: "USA (United States)", code: "+1", flag: "us" },
+    { name: "Dubai (UAE)", code: "+971", flag: "ae" },
     { name: "United Kingdom", code: "+44", flag: "gb" },
     { name: "Canada", code: "+1", flag: "ca" },
-    { name: "Australia", code: "+61", flag: "au" },
   ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const selectCountry = (code) => {
-    setState((prev) => ({ ...prev, countryCode: code }));
+    setFormData((prev) => ({ ...prev, countryCode: code }));
     setShowDropdown(false);
   };
 
@@ -37,8 +36,8 @@ export default function ContactForm() {
     console.log("Form submitted:", formData);
   };
 
-  const getFlagElement = (countryFlag) => {
-    if (countryFlag === "in") {
+  const getFlagElement = (flag) => {
+    if (flag === "in") {
       return (
         <div className="h-4 w-6 rounded-sm overflow-hidden">
           <div className="h-1/3 bg-orange-500"></div>
@@ -46,22 +45,16 @@ export default function ContactForm() {
           <div className="h-1/3 bg-green-500"></div>
         </div>
       );
-    } else if (countryFlag === "us") {
+    } else if (flag === "ae") {
       return (
-        <div className="h-4 w-6 rounded-sm overflow-hidden relative">
-          <div className="h-full w-full bg-white">
-            <div className="absolute top-0 left-0 h-1/2 w-1/3 bg-blue-600"></div>
-            <div className="h-1/7 bg-red-600"></div>
-            <div className="h-1/7 bg-white"></div>
-            <div className="h-1/7 bg-red-600"></div>
-            <div className="h-1/7 bg-white"></div>
-            <div className="h-1/7 bg-red-600"></div>
-            <div className="h-1/7 bg-white"></div>
-            <div className="h-1/7 bg-red-600"></div>
-          </div>
+        <div className="h-4 w-6 rounded-sm overflow-hidden bg-white relative">
+          <div className="absolute left-0 top-0 w-1/4 h-full bg-green-600"></div>
+          <div className="absolute left-1/4 top-0 w-1/4 h-full bg-white"></div>
+          <div className="absolute left-2/4 top-0 w-1/4 h-full bg-black"></div>
+          <div className="absolute left-3/4 top-0 w-1/4 h-full bg-red-600"></div>
         </div>
       );
-    } else if (countryFlag === "gb") {
+    } else if (flag === "gb") {
       return (
         <div className="h-4 w-6 rounded-sm overflow-hidden bg-blue-600 relative">
           <div className="absolute w-full h-1 bg-white top-1/2 -mt-0.5"></div>
@@ -70,7 +63,7 @@ export default function ContactForm() {
           <div className="absolute h-full w-2 bg-red-600 left-1/2 -ml-1 z-10 opacity-80"></div>
         </div>
       );
-    } else if (countryFlag === "ca") {
+    } else if (flag === "ca") {
       return (
         <div className="h-4 w-6 rounded-sm overflow-hidden bg-white relative">
           <div className="absolute left-0 top-0 w-1/4 h-full bg-red-600"></div>
@@ -78,16 +71,6 @@ export default function ContactForm() {
           <div className="absolute left-1/4 top-0 w-1/2 h-full flex items-center justify-center">
             <div className="w-2 h-2 bg-red-600"></div>
           </div>
-        </div>
-      );
-    } else if (countryFlag === "au") {
-      return (
-        <div className="h-4 w-6 rounded-sm overflow-hidden bg-blue-600 relative">
-          <div className="absolute top-0 left-0 h-1/2 w-1/3 bg-blue-700">
-            <div className="absolute w-full h-0.5 bg-white top-1/2 -mt-0.5"></div>
-            <div className="absolute h-full w-0.5 bg-white left-1/2 -ml-0.5"></div>
-          </div>
-          <div className="absolute bottom-1 right-2 h-1 w-1 bg-white rounded-full"></div>
         </div>
       );
     }
@@ -251,36 +234,21 @@ export default function ContactForm() {
                 </label>
                 <textarea
                   name="message"
-                  rows="4"
                   value={formData.message}
                   onChange={handleChange}
+                  rows="5"
                   className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                   required
-                />
+                ></textarea>
               </div>
 
-              <div>
-                <button
-                  type="submit"
-                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  <Send size={20} className="mr-2" />
-                  Send Message
-                </button>
-              </div>
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg font-semibold flex items-center justify-center transition-all"
+              >
+                <Send size={20} className="mr-2" /> Send Message
+              </button>
             </form>
-
-            <p className="text-xs text-gray-500 mt-4">
-              This site is protected by reCAPTCHA and the Google{" "}
-              <a href="#" className="text-blue-600 underline">
-                Privacy Policy
-              </a>{" "}
-              and{" "}
-              <a href="#" className="text-blue-600 underline">
-                Terms of Service
-              </a>{" "}
-              apply.
-            </p>
           </div>
         </div>
       </div>
