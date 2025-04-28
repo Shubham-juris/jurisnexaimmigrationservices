@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Img from "../assets/About/aboutcompany.jpg";
 import StudyAbroad from "../components/About/StudyAbroad";
 import WorkingProcess from "../components/About/WorkingProcess";
+import ImmigrationServices from "../components/About/ImmigrationServices";
 
 const AboutUsPage = () => {
   return (
@@ -22,12 +23,19 @@ const AboutUsPage = () => {
 
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              🌍 Redefining Excellence in Education and Immigration for Over a Decade
+              🌍 Redefining Excellence in Education and Immigration for Over a
+              Decade
             </h3>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              <span className="font-semibold">Juris Nexa Immigration</span> is a trusted name in global education and immigration. With a strong presence and experienced team, we specialize in helping individuals confidently pursue their international dreams.
-              <br /><br />
-              Our approach is built on transparency, honesty, and tailored support — guiding every student and professional through every stage of the journey.
+              <span className="font-semibold">Juris Nexa Immigration</span> is a
+              trusted name in global education and immigration. With a strong
+              presence and experienced team, we specialize in helping
+              individuals confidently pursue their international dreams.
+              <br />
+              <br />
+              Our approach is built on transparency, honesty, and tailored
+              support — guiding every student and professional through every
+              stage of the journey.
             </p>
 
             <div className="mb-8">
@@ -40,7 +48,10 @@ const AboutUsPage = () => {
                 Our Mission
               </h4>
               <p className="text-gray-600 leading-relaxed">
-                To empower students to study at the world’s top institutions through expert guidance, personalized counseling, and a deep understanding of global education systems. We ensure a seamless transition from dream to destination.
+                To empower students to study at the world’s top institutions
+                through expert guidance, personalized counseling, and a deep
+                understanding of global education systems. We ensure a seamless
+                transition from dream to destination.
               </p>
             </div>
 
@@ -54,7 +65,9 @@ const AboutUsPage = () => {
                 Vision of the Company
               </h4>
               <p className="text-gray-600 leading-relaxed">
-                Juris Nexa Immigration shall infuse a culture of values to support and partner international academic aspirations of students.
+                Juris Nexa Immigration shall infuse a culture of values to
+                support and partner international academic aspirations of
+                students.
               </p>
             </div>
 
@@ -67,9 +80,10 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-   
-    <StudyAbroad />
-    <WorkingProcess />
+
+      <StudyAbroad />
+      <WorkingProcess />
+      <ImmigrationServices />
     </div>
   );
 };

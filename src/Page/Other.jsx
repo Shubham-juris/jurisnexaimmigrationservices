@@ -1,5 +1,3 @@
-import React from "react";
-import BgImg from "../assets/HeroImg/Background.png";
 import MapAustralia from "../assets/HeroImg/map.png";
 import MapFrance from "../assets/HeroImg/Background.png";
 import MapGermany from "../assets/HeroImg/Background.png";
@@ -9,6 +7,7 @@ import MapItaly from "../assets/HeroImg/Background.png";
 import MapJapan from "../assets/HeroImg/Background.png";
 import MapKorea from "../assets/HeroImg/Background.png";
 import MapSingapore from "../assets/HeroImg/Background.png";
+import OtherHeader from "../components/Other/OtherHeader";
 
 const countries = [
   {
@@ -122,32 +121,22 @@ const countries = [
   },
 ];
 
-const Other = () => {
+export default function Other () {
   return (
     <div className="w-full bg-gray-100">
-      {/* Hero Section */}
-      <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${BgImg})` }}
-      >
-        <h1 className="text-4xl font-bold text-white">Other Countries</h1>
-      </div>
-
-      {/* Countries Cards */}
+      <OtherHeader />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20 py-12">
         {countries.map((country, index) => (
           <div
             key={index}
             className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition hover:shadow-xl"
           >
-            {/* Image */}
             <img
               src={country.map}
               alt={`${country.name} Map`}
               className="w-full h-48 object-cover"
             />
 
-            {/* Card Content */}
             <div className="p-6 flex flex-col justify-between flex-1">
               <h2 className="text-2xl font-bold text-blue-800 mb-2 text-center">
                 Study in {country.name}
@@ -191,7 +180,7 @@ const Other = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Other ;
+

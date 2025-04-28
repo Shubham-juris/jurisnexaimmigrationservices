@@ -13,7 +13,7 @@ export default function StudyAbroad() {
               STUDYING{" "}
               <span className="relative inline-block">
                 ABROAD
-                <span className="absolute -bottom-1 left-0 w-full h-1 bg-red-600"></span>
+                {/* <span className="absolute -bottom-1 left-0 w-full h-1 bg-blue-500"></span> */}
               </span>
             </h1>
             <p className="text-base text-gray-800 max-w-md">

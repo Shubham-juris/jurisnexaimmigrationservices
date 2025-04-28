@@ -1,19 +1,9 @@
-import React from "react";
-import BgImg from "../assets/HeroImg/Background.png";
-import MapImg from "../assets/HeroImg/map.png"; // You can change this to a scholarship-related image if needed
-
+import MapImg from "../assets/HeroImg/map.png"; 
+import ScholarshipHeader from "../components/Scholarship/ScholarshipHeader";
 const Scholarship = () => {
   return (
-    <div className="w-full min-h-screen bg-gray-100">
-      {/* Hero Section */}
-      <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${BgImg})` }}
-      >
-        <h1 className="text-4xl font-bold text-white">Scholarship Opportunities</h1>
-      </div>
-
-      {/* Content Section */}
+    <div className="w-full min-h-screen bg-gray-100">     
+      <ScholarshipHeader />
       <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
           <h2 className="text-3xl font-extrabold text-gray-800 mb-8 text-center">
@@ -60,7 +50,6 @@ const Scholarship = () => {
         </div>
       </div>
 
-      {/* Intakes or Deadlines */}
       <div className="mt-12">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">📅 Common Scholarship Deadlines</h3>
         <div className="flex flex-wrap justify-center gap-6">
@@ -75,7 +64,6 @@ const Scholarship = () => {
         </div>
       </div>
 
-      {/* Info Section or Map Placeholder */}
       <div className="w-full py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">🎯 Explore Opportunities</h3>

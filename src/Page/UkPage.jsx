@@ -1,18 +1,10 @@
-import React from "react";
-import BgImg from "../assets/HeroImg/Background.png";
 import MapImg from "../assets/HeroImg/map.png";
 import ReasonsToChooseUK from "../components/UnitedKingdom/ChooseUk";
+import UnitedHeader from "../components/UnitedKingdom/UnitedHeader";
 const UkPage = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100">
-      <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${BgImg})` }}
-      >
-        <h1 className="text-5xl font-bold text-white">
-          United Kingdom
-        </h1>
-      </div>
+      <UnitedHeader />
 
       <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">

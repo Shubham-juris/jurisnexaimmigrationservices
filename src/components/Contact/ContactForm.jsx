@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Phone, Mail, Send, ChevronDown } from "lucide-react";
 import studyImg from "../../assets/HeroImg/Studyimage.jpg";
 
-export default function ContactForm() {
+export default function ContactForm () {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -82,7 +82,7 @@ export default function ContactForm() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-3">Get In Touch</h1>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-xl mx-auto">
             We're here to answer any questions you may have about our services.
             Reach out to us and we'll respond as soon as we can.
@@ -253,5 +253,5 @@ export default function ContactForm() {
         </div>
       </div>
     </div>
-  );
+  )
 }

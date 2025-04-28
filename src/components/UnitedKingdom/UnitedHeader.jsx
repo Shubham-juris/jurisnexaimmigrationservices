@@ -1,6 +1,6 @@
 import BgImg from "../../assets/Logo/headerimage.jpg";
 
-export default function ServicesHeader() {
+export default function UnitedHeader() {
   return (
     <div
       className="w-full h-[300px] bg-cover bg-center flex items-center justify-between"
@@ -9,9 +9,8 @@ export default function ServicesHeader() {
       }}
     >
       <div className="container mx-auto">
-        <h1 className="text-6xl font-bold px-30 text-white"> Services What We Offer</h1>
+        <h1 className="text-6xl font-bold px-30 text-white">United Kingdom</h1>
       </div>
     </div>
   );
 }
-

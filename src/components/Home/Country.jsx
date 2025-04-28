@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Canada from "../../assets/Country/canada.jpg";
 import India from "../../assets/Country/india.jpg";
-import Australia from "../../assets/Country/australia.jpg";
+import Dubai from "../../assets/Country/dubai.jpg";
 import UnitedKingdom from "../../assets/Country/unitedkingdom.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -18,8 +18,8 @@ const locations = [
   },
   {
     id: 3,
-    name: "Australia",
-    image: Australia,
+    name: "Dubai",
+    image: Dubai,
   },
   {
     id: 4,

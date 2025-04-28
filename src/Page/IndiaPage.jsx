@@ -1,20 +1,13 @@
 import React from "react";
-import BgImg from "../assets/HeroImg/Background.png";
 import MapImg from "../assets/HeroImg/map.png"; 
 import ReasonsToChooseIndia from "../components/India/ChooseIndia";
+import IndiaHeader from "../components/India/IndiaHeader";
 
 export default function IndiaPage() {
   return (
     <div className="w-full min-h-screen bg-gray-100">
-      {/* Hero Section */}
-      <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${BgImg})` }}
-      >
-        <h1 className="text-5xl font-bold text-white">India</h1>
-      </div> 
+     <IndiaHeader />
 
-      {/* Why Choose India */}
       <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
           <h2 className="text-3xl font-extrabold text-gray-800 mb-8 text-center">
@@ -61,7 +54,6 @@ export default function IndiaPage() {
         </div>
       </div>
 
-      {/* Upcoming Intakes */}
       <div className="mt-12">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">🎯 Upcoming Intakes</h3>
         <div className="flex flex-wrap justify-center gap-6">
@@ -76,7 +68,6 @@ export default function IndiaPage() {
         </div>
       </div>
 
-      {/* Explore India Section */}
       <div className="w-full py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">📍 Explore India</h3>
@@ -92,8 +83,6 @@ export default function IndiaPage() {
           </p>
         </div>
       </div>
-
-      {/* Reasons Section */}
       <ReasonsToChooseIndia />
     </div>
   );

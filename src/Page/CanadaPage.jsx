@@ -1,16 +1,11 @@
-import BgImg from "../assets/HeroImg/Background.png";
 import MapImg from "../assets/HeroImg/map.png";
+import CanadaHeader from "../components/Canada/CanadaHeader";
 import ReasonsToChooseCanada from "../components/Canada/ChooseCanada";
 
 const CanadaPage = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100">
-      <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${BgImg})` }}
-      >
-        <h1 className="text-5xl font-bold text-white">Canada</h1>
-      </div>
+      <CanadaHeader />
       <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
           <h2 className="text-3xl font-extrabold text-gray-800 mb-8 text-center">

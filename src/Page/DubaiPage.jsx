@@ -2,17 +2,13 @@ import React from "react";
 import BgImg from "../assets/HeroImg/Background.png";
 import MapImg from "../assets/HeroImg/map.png";
 import ReasonsToChooseDubai from "../components/Dubai/ChooseDubai";
+import DubaiHeader from "../components/Dubai/DubaiHeader";
 
 const DubaiPage = () => {
   return (
+  
     <div className="w-full min-h-screen bg-gray-100">
-      <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${BgImg})` }}
-      >
-        <h1 className="text-5xl font-bold text-white">Dubai</h1>
-      </div>
-
+      <DubaiHeader />
       <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
           <h2 className="text-3xl font-extrabold text-gray-800 mb-8 text-center">
