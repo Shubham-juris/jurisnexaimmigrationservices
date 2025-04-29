@@ -35,7 +35,6 @@ export default function ContactUsPage() {
           ))}
         </div>
       </div>
-
       <ContactForm />
     </div>
   );

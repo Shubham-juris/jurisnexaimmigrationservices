@@ -9,7 +9,6 @@ import CursorIcon from '../components/Common/CursorIcon';
 import AboutUsPage from '../Page/AboutUsPage';
 import Other from '../Page/Other';
 import Scholarship from '../Page/Scholarship';
-import ContactUs from '../components/Home/ContactUs';
 import ContactUsPage from '../Page/ContactUsPage';
 import DubaiPage from '../Page/DubaiPage';
 import IndiaPage from '../Page/IndiaPage';
@@ -34,7 +33,6 @@ const RouterComponent = () => {
         <Route path="/contact" element={<ContactUsPage />} /> 
         <Route path="/services" element={<ServicesPage />} />
       </Routes>
-      <ContactUs />
       <Footer />
       <CursorIcon/>
     </Router>

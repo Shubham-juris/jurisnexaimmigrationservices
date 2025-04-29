@@ -1,13 +1,11 @@
 import React from "react";
-import BgImg from "../assets/HeroImg/Background.png";
-import MapImg from "../assets/HeroImg/map.png";
+import MapImg from "../assets/Country/dubaimap.jpg";
 import ReasonsToChooseDubai from "../components/Dubai/ChooseDubai";
 import DubaiHeader from "../components/Dubai/DubaiHeader";
 
 const DubaiPage = () => {
   return (
-  
-    <div className="w-full min-h-screen bg-gray-100">
+    <div className="w-full text-center min-h-screen from-gray-100 to-gray-600">
       <DubaiHeader />
       <div className="w-full bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
@@ -16,10 +14,12 @@ const DubaiPage = () => {
           </h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-              🎓 Dubai hosts internationally accredited universities and colleges.
+              🎓 Dubai hosts internationally accredited universities and
+              colleges.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-              🌍 A truly multicultural city with residents from over 200 countries.
+              🌍 A truly multicultural city with residents from over 200
+              countries.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
               🏙️ Safe, modern, and innovative urban environment.
@@ -34,10 +34,12 @@ const DubaiPage = () => {
               ✈️ Strategic location with easy global travel connections.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-              🏖️ High quality of life with luxury, leisure, and adventure options.
+              🏖️ High quality of life with luxury, leisure, and adventure
+              options.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-              🏦 Growing economy with a focus on innovation and entrepreneurship.
+              🏦 Growing economy with a focus on innovation and
+              entrepreneurship.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
               🛠️ Internship and part-time job opportunities during studies.
@@ -46,7 +48,8 @@ const DubaiPage = () => {
               🧑‍🎓 Post-graduation work visas and career pathways.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-              📈 Rapidly expanding sectors like technology, business, and tourism.
+              📈 Rapidly expanding sectors like technology, business, and
+              tourism.
             </li>
             <li className="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
               🏆 Global events and exposure to international networks.
@@ -59,7 +62,7 @@ const DubaiPage = () => {
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
           🎯 Upcoming Intakes
         </h3>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex mb-10 flex-wrap justify-center gap-6">
           {["January", "May", "September"].map((month) => (
             <div
               key={month}
@@ -67,24 +70,25 @@ const DubaiPage = () => {
             >
               {month}
             </div>
-          ))}
+          ))} 
         </div>
       </div>
 
-      <div className="w-full py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-5xl mx-auto text-center">
+      <div className="w-full   py-16 px-4 bg-gradient-to-b from-white to-blue-50">
+        <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">
             📍 Explore Dubai
           </h3>
-          <div className="rounded-2xl overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300 border border-gray-200">
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
             <img
               src={MapImg}
               alt="Dubai Map"
-              className="w-full object-cover"
+              className="w-[500px] h-[500px] object-cover mx-auto"
             />
           </div>
-          <p className="mt-4 text-gray-600 text-base">
-            Dubai is a global hub for education, business, and tourism, offering students world-class opportunities in a vibrant, dynamic city.
+          <p className="mt-4 py-4 text-gray-600 text-base">
+            Dubai is a global hub for education, business, and tourism, offering
+            students world-class opportunities in a vibrant, dynamic city.
           </p>
         </div>
       </div>

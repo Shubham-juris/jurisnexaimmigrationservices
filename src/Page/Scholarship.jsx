@@ -1,5 +1,6 @@
 import MapImg from "../assets/HeroImg/map.png"; 
 import ScholarshipHeader from "../components/Scholarship/ScholarshipHeader";
+import ContactUs from '../components/Home/ContactUs';
 const Scholarship = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100">     
@@ -52,7 +53,7 @@ const Scholarship = () => {
 
       <div className="mt-12">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">📅 Common Scholarship Deadlines</h3>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex mb-10 flex-wrap justify-center gap-6">
           {["January", "April", "September"].map((month) => (
             <div
               key={month}
@@ -79,6 +80,7 @@ const Scholarship = () => {
           </p>
         </div>
       </div>
+      <ContactUs />
     </div>
   );
 };

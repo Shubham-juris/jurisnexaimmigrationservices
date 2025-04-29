@@ -3,7 +3,7 @@ import Img from "../assets/About/aboutcompany.jpg";
 import StudyAbroad from "../components/About/StudyAbroad";
 import WorkingProcess from "../components/About/WorkingProcess";
 import ImmigrationServices from "../components/About/ImmigrationServices";
-
+import ContactUs from '../components/Home/ContactUs';
 const AboutUsPage = () => {
   return (
     <div className="bg-gray-50 py-20">
@@ -84,6 +84,7 @@ const AboutUsPage = () => {
       <StudyAbroad />
       <WorkingProcess />
       <ImmigrationServices />
+      <ContactUs />
     </div>
   );
 };

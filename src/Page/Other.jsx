@@ -1,12 +1,12 @@
-import MapAustralia from "../assets/HeroImg/map.png";
-import MapFrance from "../assets/HeroImg/Background.png";
-import MapGermany from "../assets/HeroImg/Background.png";
-import MapIndia from "../assets/HeroImg/Background.png";
-import MapIreland from "../assets/HeroImg/Background.png";
-import MapItaly from "../assets/HeroImg/Background.png";
-import MapJapan from "../assets/HeroImg/Background.png";
-import MapKorea from "../assets/HeroImg/Background.png";
-import MapSingapore from "../assets/HeroImg/Background.png";
+import MapAustralia from "../assets/Other/Australia.jpg";
+import MapFrance from "../assets/Other/France.jpg";
+import MapGermany from "../assets/Other/Germany.jpg";
+import MapIndia from "../assets/Other/India.jpg";
+import MapIreland from "../assets/Other/Ireland.jpg";
+import MapItaly from "../assets/Other/Italy.jpg";
+import MapJapan from "../assets/Other/Japan.jpg";
+import MapKorea from "../assets/Other/Korea.jpg";
+import MapSingapore from "../assets/Other/Singapore.jpg";
 import OtherHeader from "../components/Other/OtherHeader";
 
 const countries = [
@@ -125,7 +125,7 @@ export default function Other () {
   return (
     <div className="w-full bg-gray-100">
       <OtherHeader />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20 py-12">
+      <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20 py-12">
         {countries.map((country, index) => (
           <div
             key={index}

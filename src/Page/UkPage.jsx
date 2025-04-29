@@ -1,4 +1,4 @@
-import MapImg from "../assets/HeroImg/map.png";
+import MapImg from "../assets/Country/ukmap.avif";
 import ReasonsToChooseUK from "../components/UnitedKingdom/ChooseUk";
 import UnitedHeader from "../components/UnitedKingdom/UnitedHeader";
 const UkPage = () => {
@@ -63,7 +63,7 @@ const UkPage = () => {
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
           🎯 Upcoming Intakes
         </h3>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex mb-10 flex-wrap justify-center gap-6">
           {["January", "May", "September"].map((month) => (
             <div
               key={month}
@@ -75,17 +75,22 @@ const UkPage = () => {
         </div>
       </div>
 
-      <div className="w-full py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-5xl mx-auto text-center">
+
+      <div className="w-full py-16 px-4 bg-gradient-to-b from-white to-blue-50">
+        <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">
             📍 Explore the UK
           </h3>
-          <div className="rounded-2xl overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300 border border-gray-200">
-            <img src={MapImg} alt="UK Map" className="w-full object-cover" />
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+            <img
+              src={MapImg}
+              alt="Uk Map"
+              className="w-[500px] h-[500px] object-cover mx-auto"
+            />
           </div>
-          <p className="mt-4 text-gray-600 text-base">
-            The UK offers diverse study destinations including London,
-            Manchester, Edinburgh, and Glasgow.
+          <p className="mt-4 py-4 text-gray-600 text-base">
+          The UK offers diverse study destinations including London,
+          Manchester, Edinburgh, and Glasgow.
           </p>
         </div>
       </div>

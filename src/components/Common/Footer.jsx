@@ -9,7 +9,7 @@ import {
 import { FiMail } from 'react-icons/fi';
 import Img from '../../assets/Logo/LOGO.jpg';
 
-const Footer = () => {
+export default function Footer () {
   return (
     <footer className="text-sm text-gray-400">
       <div className="bg-gray-100 w-full">
@@ -109,7 +109,6 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
           <div>
             <h4 className="mb-4 text-lg font-semibold">Study</h4>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -148,7 +147,5 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}
