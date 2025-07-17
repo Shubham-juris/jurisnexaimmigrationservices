@@ -1,5 +1,5 @@
 import React from "react";
-import MapImg from "../assets/Country/Indiamap.avif";
+import MapImg from "../assets/Country/indiamap.avif";
 import ReasonsToChooseIndia from "../components/India/ChooseIndia";
 import IndiaHeader from "../components/India/IndiaHeader";
 
